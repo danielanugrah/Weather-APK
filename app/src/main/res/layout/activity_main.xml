@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundclear"
+    android:padding="16dp">
+
+    <!-- City EditText -->
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter city name"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:imeOptions="actionDone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Get Weather Button -->
+    <Button
+        android:id="@+id/getWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="Get Weather"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+    <!-- Current Weather Image -->
+    <ImageView
+        android:id="@+id/currentWeatherImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/getWeatherButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/weatherclear"
+        android:contentDescription="Current Weather Image" />
+
+    <!-- Weather Information TextView -->
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentWeatherImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="16dp" />
+
+    <!-- Daily Weather TextView -->
+    <TextView
+        android:id="@+id/dailyWeatherTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherTextView"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/weather_background"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp" />
+
+    <!-- Weekly Weather TextView -->
+    <TextView
+        android:id="@+id/weeklyWeatherTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dailyWeatherTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/weather_background"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp" />
+
+</RelativeLayout>
